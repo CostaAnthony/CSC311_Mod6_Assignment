@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.farmingdale.csc311_mod6_assignment.RegistrationFormController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="560.0" prefWidth="840.0" spacing="20.0">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+      
+                <Label fx:id="registrationLabel" text="REGISTER">
+            <font>
+               <Font name="System Bold" size="25.0" />
+            </font>
+         </Label>
+         <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="150.0" prefWidth="273.0">
+           <columnConstraints>
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.33331298828125" minWidth="10.0" prefWidth="119.00004069010417" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.33331298828125" minWidth="10.0" prefWidth="154.33329264322913" />
+           </columnConstraints>
+           <rowConstraints>
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+           </rowConstraints>
+            <children>
+               <TextField fx:id="firstNameTF" GridPane.columnIndex="1" />
+               <TextField fx:id="lastNameTF" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               <TextField fx:id="emailTF" prefHeight="25.0" prefWidth="189.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               <Label fx:id="firstNameLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="200.0" text="First Name    " />
+               <Label fx:id="lastNameLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="200.0" text="Last Name    " GridPane.rowIndex="1" />
+               <Label fx:id="emailLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="200.0" text="Email    " GridPane.rowIndex="2" />
+               <TextField fx:id="dobTF" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               <TextField fx:id="zipTF" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               <Label fx:id="dobLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="200.0" text="Date of Birth    " GridPane.rowIndex="3" />
+               <Label fx:id="zipLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="200.0" text="Zip Code    " GridPane.rowIndex="4" />
+            </children>
+         </GridPane>
+          <Button fx:id="addButton" onAction="#onAddButtonClick" text="ADD">
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+         </Button>
+      </VBox>
+   </children>
+</AnchorPane>
